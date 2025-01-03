@@ -1,0 +1,2 @@
+# Allow for YouTube watch history
+@@||s.youtube.com^$important

@@ -1,0 +1,82 @@
+# Prevent local network addresses from being resolved
+
+||lan^$important
+||local^$important
+
+
+# Advertising & Analytics
+
+||www.googleadservices.com^$important
+||femetrics.grammarly.io^$important
+||analytics-api.fresha.com^$important
+||b2c-unleash-proxy.fresha.com^$important
+||ingress-production-01.fresha.com^$important
+
+## AdGuard has an exception for this address since it can break apps but it is a known tracking domain
+## See:
+## - https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/185
+## - https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/493
+## - https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1235
+||adjust.com^$important
+
+## I suspect this is really a tracking domain despite what Microsoft says
+## I have not noticed any services breaking when this domain is blocked.
+## See:
+## - https://learn.microsoft.com/en-gb/windows/privacy/manage-windows-21h2-endpoints
+## - https://github.com/AdguardTeam/cname-trackers/issues/57
+||self.events.data.microsoft.com^$important
+## Also block what it redirects to
+||self-events-data.trafficmanager.net^$important
+
+## Facebook tracking domains
+||graph-video.facebook.com^$important
+||graph.facebook.com^$important
+||graph.instagram.com^$important
+||graph.whatsapp.net^$important
+||connect.facebook.net^$important
+
+## Capital One tracking domain
+## This was briefly not being blocked by some services so I have added it here.
+||smetrics.capitalone.com^$important
+
+# Datadog appears to be using their NTP service to track users.
+# I have seen requests to it from a phone.
+||datadog.pool.ntp.org^$important
+
+
+# Crash Reporting
+
+||sentry.io^$important
+||www.gravatar.com^$important
+
+
+# Domains from spam queries and discovery services
+
+## Original query:
+##  69.207.13.182.doh.ki3ednstest.com
+||ki3ednstest.com^$important
+
+## Original query:
+##   snu.ac.kr
+||snu.ac.kr^$important
+
+## Original query:
+##   5e732f8a8c7411ef88a9fa163ec6c115.openresolver.dnslab.cn
+||openresolver.dnslab.cn^$important
+
+## Original query:
+##   overseas.69.207.13.182.0.test.whitechun.lol
+||whitechun.lol^$important
+
+## Original queries:
+##   io7kqyvdhvoaw.prudent.dnscheck.internet-measurement.com
+##   ot3c5rbjq3qme.meritorious.dnscheck.internet-measurement.com
+## This appears to be an internet census company.
+##   https://internet-measurement.com/
+## They maintain a list of IPs that they use available:
+##   https://internet-measurement.com/#ips
+||dnscheck.internet-measurement.com^$important
+
+## Original query:
+##   astrill4u.com
+||astrill4u.com^$important

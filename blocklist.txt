@@ -4,6 +4,7 @@
 ||local^$important
 
 
+
 # Advertising & Analytics
 
 ||www.googleadservices.com^$important
@@ -43,11 +44,24 @@
 # I have seen requests to it from a phone.
 ||datadog.pool.ntp.org^$important
 
+# 2K Games tracking
+# Some online reports seem to indicate that this could prevent some games from loading.
+||telemetryk.api.2kcoretech.online^$important
+
+
 
 # Crash Reporting
 
 ||sentry.io^$important
 ||www.gravatar.com^$important
+
+
+
+# Suspicious Domains
+
+# Suspicious ping to this site from the BestBroker app.
+||curbengh.github.io^$important
+
 
 
 # Domains from spam queries and discovery services
@@ -80,3 +94,86 @@
 # Original query:
 #   astrill4u.com
 ||astrill4u.com^$important
+
+# Original query:
+#   pz0amrnzophc9tbqyf3diqjmy.measurement.raiun.de
+||measurement.raiun.de^$important
+
+# From netsecscan.net
+# Original query:
+#   e.tstng.net
+||e.tstng.net^$important
+
+# Original query:
+#   129.21.149.189.1736766000.main.research.openresolve.rs
+||research.openresolve.rs^$important
+
+# Original query:
+#   ip.parrotdns.com
+||parrotdns.com^$important
+
+# Original query:
+#   ims.mnc001.mcc262.3gppnetwork.org
+||3gppnetwork.org^$important
+
+# Original query:
+#   811595bd.asertdnsresearch.com
+#   inanis.asertdnsresearch.com
+||asertdnsresearch.com^$important
+
+# Original query:
+#   qq.com
+||qq.com^$important
+
+# Original query:
+#   148144032.01.811595bd.isavrange.v4.isavscan.baby
+||isavscan.baby^$important
+
+# Original query:
+#   m3v5.ta7.ch
+||ta7.ch^$important
+
+# Original query:
+#   ta6.ch
+||ta6.ch^$important
+
+# Original query:
+#   rr-mirror.research.nawrocki.berlin
+||research.nawrocki.berlin^$important
+
+# Original query:
+#   len2100.ictdns.online
+# This requested a record with a very large payload.
+||ictdns.online^$important
+
+# Original query:
+#   len1700.anictdns.store
+# This requested a record with a very large payload.
+||anictdns.store^$important
+
+# Original query:
+#   litex.cz
+||litex.cz^$important
+
+# Original query:
+#   eldercom.de
+||eldercom.de^$important
+
+# Original query:
+#   linnea.fr
+||linnea.fr^$important
+
+# Original query:
+#   129.021.149.189.yy.www.dnsmeasurement.com
+#   mm.www.dnsmeasurement.com
+#   nn.www.dnsmeasurement.com
+#   129.021.149.189.0328-version5.www.dnsmeasurement.com
+||www.dnsmeasurement.com^$important
+
+# Original query:
+#   vyw767.811595bd.n32246.drakkarns.com
+||drakkarns.com^$important
+
+# Original query:
+#   353910058a916267bb63f470d85ef25c8691e2.ipv6scanning.com
+||ipv6scanning.com^$important

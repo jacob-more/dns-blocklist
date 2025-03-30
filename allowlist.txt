@@ -1,2 +1,6 @@
 # Allow for YouTube watch history
 @@||s.youtube.com^$important
+
+# Incorrectly blocked domain for VLC.
+# This is one of their ticket management sites.
+@@||trac.videolan.org^$important
